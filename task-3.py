@@ -1,35 +1,18 @@
 def Tm(str):
     tape = list(str)
     n = len(tape)
-    while True:
-        try:
-            i_0 = tape.index('0')
-            tape[i_0] = 'X'
-        except ValueError:
-            break
+    if n % 4 != 0 or n == 0:
+        return False
+    blocck = n//4
+    b_1 = str[0:blocck]
+    b_2 = str[blocck:2 * blocck]
+    b_3 = str[2 * blocck:3 * blocck]
+    b_4 = str[3 * blocck:]
+    if all(ch == '0' for ch in b_1) and all(ch == '1' for ch in b_2) and all(ch == '0' for ch in b_3) and all(ch == '1' for ch in b_4):
+           return True
+    return False
 
-        try:
-            i_1 = tape.index('1')
-            tape[i_1] = 'Y'
-        except ValueError:
-            return False
-        
-        try:
-            i_2 = tape.index('0')
-            tape[i_2] = 'Z'
-        except ValueError:
-            return False
 
-        try:
-            i_3 = tape.index('1')
-            tape[i_3] = 'K'
-        except ValueError:
-            return False
-    
-    for ch in tape:
-        if ch not in {'X','Y','Z','K'}:
-            return False
-    return True
 inp = ["0101", "00110011", "000111000111", "001101", "00011100011"]
 for x in inp:
     val = Tm(x)
