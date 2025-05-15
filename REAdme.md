@@ -1,4 +1,4 @@
-#Basmalla mohamed saeed desoki
+Basmalla mohamed saeed desoki
 # section 2
 #task 1:
 Implement a Pushdown Automaton (PDA) that accepts only odd-length palindromes
@@ -7,7 +7,7 @@ Implement a Pushdown Automaton (PDA) that accepts only odd-length palindromes
 3. Run the script using:  
    ```bash
    python pda_test.py
-
+--------------------------------------
 # task2:
 Implement a Turing Machine (TM) that accepts strings of the form 0^n 1^n 0^n 1^n.
 ###instructions:
