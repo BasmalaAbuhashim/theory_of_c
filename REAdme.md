@@ -2,6 +2,8 @@ Basmalla mohamed saeed desoki
 # section 2
 #task 1:
 Implement a Pushdown Automaton (PDA) that accepts only odd-length palindromes
+####هرسف
+#####instructions:
 1.Ensure Python is installed.
 2. Copy the PDA function into a Python file (e.g., `pda_test.py`).
 3. Run the script using:  
