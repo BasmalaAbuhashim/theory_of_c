@@ -18,8 +18,6 @@ def pda(str):
             state = "q2"
             i+=1
         elif state == "q2":
-            if not stack:
-                return False
             topp = stack.pop()
             if topp != ch:
                 return False
